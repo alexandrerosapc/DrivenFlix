@@ -1,9 +1,13 @@
 export default function Menu() {
+    const menu =[
+        {texto: "Home", link: "./home.html", imagem: "./imgs/home-outline.svg" },
+        {texto: "Favoritos", link: "./favoritos.html", imagem: "./imgs/heart-outline.svg" },
+        {texto: "Contatos", link: "./contatos.html", imagem: "./imgs/mail-outline.svg" }
+    ]
+
     return(
         <ul class="menu">
-            <MenuItem texto="Home" link="./home.html" imagem="./imgs/home-outline.svg"/>
-            <MenuItem texto="Favoritos" link="./favoritos.html" imagem="./imgs/heart-outline.svg"/>
-            <MenuItem texto="Contatos" link="./contatos.html" imagem="./imgs/mail-outline.svg"/>
+            {menu.map((i)=> <MenuItem imagem={i.imagem} link={i.link} texto={i.texto} />)}
         </ul>
     )
 }
