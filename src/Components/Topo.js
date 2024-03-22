@@ -11,7 +11,7 @@ export default function Topo() {
         setImagem(prompt("Coloque o link de uma imagem"))
     }
     return (
-        <div class="topo">
+        <div className="topo">
             <h1>DrivenFlix</h1>
             <div>
                 <button onClick={inserirNome}>Inserir Nome</button>

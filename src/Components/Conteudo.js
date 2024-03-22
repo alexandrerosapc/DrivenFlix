@@ -12,8 +12,8 @@ export default function Conteudo() {
         { nome: "Garota Exemplar", imagem: "https://i.pinimg.com/474x/12/3c/f8/123cf832b2ac27a396f1a6edb2a351bb.jpg" }
     ]
     return (
-        <ul class="conteudo">
-            {filmes.map((f) => <Filme imagem={f.imagem} nome={f.nome} />
+        <ul className="conteudo">
+            {filmes.map((f) => <Filme key={f.nome} imagem={f.imagem} nome={f.nome} />
             )}
 
         </ul>

@@ -4,12 +4,12 @@ import Topo from "./Topo"
 
 export default function App() {
     return (
-        <div>
+        <>
             <Topo/>
-            <div class="row">
+            <div className="row">
                 <Menu/>
                 <Conteudo/>
             </div>
-        </div>
+        </>
     )
 }
